@@ -1,0 +1,33 @@
+Phase 1: Data Ingestion and Cleaning
+Duration: 2 weeks
+Programming Languages: SQL, Python
+Tasks:
+Import the dataset into SQL
+Perform basic data cleaning (e.g., handle missing values, remove duplicates)
+Generate summary tables for initial exploration
+Prepare data for loading into Python for further analysis
+
+Phase 2: Exploratory Data Analysis (EDA) and Data Preparation
+Duration: 1 week
+Programming Languages: SQL, Python, Tableau
+Tasks:
+Use SQL to run exploratory queries and generate summary statistics
+Conduct exploratory visualizations in Python (e.g., distributions, trends)
+Set up preliminary Tableau dashboards to visualize key EDA insights
+
+Phase 3: Feature Engineering and Model Building
+Duration: 2 weeks
+Programming Languages: Python, R
+Tasks:
+Perform feature engineering in Python to create new features (e.g., profit margins, time-based features)
+Build predictive models in Python (e.g., regression for profit prediction)
+Develop classification models in R (e.g., customer segmentation)
+
+Phase 4: Model Validation, Visualization, and Documentation
+Duration: 2 weeks
+Programming Languages: R, Python, Tableau
+Tasks:
+Validate model results in R using cross-validation and residual analysis
+Finalize interactive Tableau dashboards with EDA, segmentation, and prediction insights
+Document final results, findings, and actionable insights for presentation
+
