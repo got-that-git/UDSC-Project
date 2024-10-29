@@ -1,0 +1,22 @@
+Data Loading and Aggregation (SQL):
+
+Import the raw data into SQL.
+Run initial queries for basic summary stats and extraction.
+
+
+Data Cleaning, Feature Engineering, and Modeling (Python):
+
+Clean the data, engineer features, and save the cleaned data back to SQL or as a separate file.
+Build and evaluate predictive models.
+
+
+Statistical Analysis and EDA Visualization (R):
+
+Use R for in-depth EDA, statistical analysis, and segmentation.
+Produce high-quality plots to explore patterns in the data.
+
+
+Final Insights and Dashboard Presentation (Tableau):
+
+Import the cleaned data or model outputs into Tableau.
+Create a dashboard that visualizes key findings and model predictions.
