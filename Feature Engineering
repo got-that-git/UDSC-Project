@@ -1,1 +1,30 @@
+import pandas as pd
+
+# Load the dataset
+data = pd.read_csv('/mnt/data/Sample - Superstore (1).csv', encoding='latin1')
+
+# Feature Engineering: Creating new features
+
+# 1. Order Processing Time: Difference between Order Date and Ship Date
+data['Order Date'] = pd.to_datetime(data['Order Date'])
+data['Ship Date'] = pd.to_datetime(data['Ship Date'])
+data['Processing Time (Days)'] = (data['Ship Date'] - data['Order Date']).dt.days
+
+# 2. Sales per Unit: Sales divided by Quantity
+data['Sales per Unit'] = data['Sales'] / data['Quantity']
+
+# 3. Profit Margin: Profit as a percentage of Sales
+data['Profit Margin (%)'] = (data['Profit'] / data['Sales']) * 100
+
+# 4. High Discount Flag: Flag orders with high discount (threshold of 30%)
+data['High Discount Flag'] = data['Discount'].apply(lambda x: 1 if x > 0.3 else 0)
+
+# 5. Region-Specific Profit: Create region-based profit buckets
+data['Region-Specific Profit'] = data.groupby('Region')['Profit'].transform('mean')
+
+# 6. Day of the Week: Extract the day of the week from Order Date
+data['Order Day'] = data['Order Date'].dt.day_name()
+
+# Display a sample of the updated dataset
+data.head()
 
