@@ -1,7 +1,8 @@
 import pandas as pd
 
 # Load the dataset
-data = pd.read_csv('/mnt/data/Sample - Superstore (1).csv', encoding='latin1')
+file_path = r'C:\Users\bwzyl\OneDrive\Desktop\UDSC Project\Sample - Superstore (1).csv'
+data = pd.read_csv(file_path, encoding='latin1')
 
 # Feature Engineering: Creating new features
 
